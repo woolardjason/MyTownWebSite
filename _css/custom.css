@@ -317,7 +317,13 @@ div.news {
 -----------------------------------------------------*/
 footer {
 	background: #966964;
-	height: 60px;
+	height: 300px;
+	padding-top:20px;
+}
+#footerList{
+	color:white;
+	padding-left: 35px;
+	padding-top: 20px;
 }
 footer p {
 	font-size: 12px;
@@ -338,6 +344,15 @@ footer ul li a {
 	margin-right: 16px;
 	padding: 0 16px;
 	line-height: 60px;
+}
+#footerLocation {
+	color:white;
+	padding-left:35px;
+	padding-top: 15px;
+}
+#copywright {
+	text-align: center;
+	padding-top: 15px;
 }
 footer ul li a:hover {
 	color: white;
@@ -416,6 +431,7 @@ aside h3 {
 footer {
 	height: auto;
 }
+
 footer p {
 	text-align: center;
 	margin-top: 16px;
@@ -435,5 +451,4 @@ footer form input[type="submit"].button {
 }
 footer form input[type="search"], footer form input[type="submit"] {
 	float: left;
-}
 }

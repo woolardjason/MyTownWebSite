@@ -10,7 +10,7 @@
   <title>Welcome to MyTown</title> 
   <link rel="stylesheet" href="_css/foundation.css">
   <link rel="stylesheet" href="_css/custom.css">
-  <script src="_javascripts/modernizr.foundation.js"></script>
+  <script src="_scripts/modernizr.foundation.js"></script>
   <script src="//use.edgefonts.net/lato.js"></script>
   <script src="//use.edgefonts.net/cardo.js"></script>
   <!--[if lt IE 9]>
@@ -110,17 +110,31 @@
 	</aside>
 </div>
 <footer role="contentinfo" class="row">
-	<p class="three columns">&copy; 2013 MyTownWebsites.com</p>
-	<nav role="navigation" class="eight columns">
-		<ul class="block-grid mobile-two-up">
-		  <li><a href="articles.htm" title="About Us">About Us</a></li>
-		  <li><a href="articles.htm" title="Our Portfolio">Our Portfolio</a></li>
-		  <li><a href="courses.htm" title="Services">Services</a></li>
-		  <li><a href="speaking.htm" title="Special Promo">Special Promo</a></li>
-		  <li><a href="resources.htm" title="FAQs">FAQs</a></li>
-		  <li><a href="about.htm" title="Contact Us">Contact Us</a></li>
+	<div class="row">
+		<div class="four columns">
+			<ul id="footerList">
+				<li>about my town websites</li>
+				<li>mytown website portfolio</li>
+				<li>mytown other design services</li>
+				<li>$475.00 cheap websites</li>
+				<li>mytown website FAQs</li>
+				<li>contact mytownwebsites.com</li>
+			</ul>
+		</div>
+		<div class="eight columns">
+		Slider will start here and go across ------------------------------------------>	
+		</div>	
+	</div>
+	<div class="four columns" id="footerLocation">
+		<ul>
+			<li>MyTown Websites - Cheap, local web sites</li>
+			<li>Peabody, MA 01960</li>
+			<li>978-395-5787</li>
 		</ul>
-	</nav>
+	</div>
+	<p id="copywright" class="eight columns">
+		&copy; 2013. MyTownWebsites.com
+	</p>
 </footer>
 <div id="newsModal" class="reveal-modal large">
 	<h4>Sign me up!</h4>
@@ -137,5 +151,7 @@
 <script src="_scripts/jquery.js"></script>
 <script src="_scripts/foundation.min.js"></script>
 <script src="_scripts/app.js"></script>
+
+
 </body>
 </html>
