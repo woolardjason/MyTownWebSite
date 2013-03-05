@@ -50,9 +50,10 @@ p {
 	background: -ms-linear-gradient(top,  #cfcf85 0%,#c8b660 50%,#b09d34 51%,#79651c 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #cfcf85 0%,#c8b660 50%,#b09d34 51%,#79651c 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcf85', endColorstr='#79651c',GradientType=0 ); /* IE6-8 */
-	margin-right: 25px;
+	margin-right: 35px;
 	margin-bottom: 0px;
 	margin-top:40px;
+	padding-left:20px;
 	-moz-border-radius-topleft: 10px;
 	-moz-border-radius-topright:10px;
 	-moz-border-radius-bottomleft:5px;
@@ -61,10 +62,13 @@ p {
 	-webkit-border-top-right-radius:10px;
 	-webkit-border-bottom-left-radius:5px;
 	-webkit-border-bottom-right-radius:5px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 	border-bottom-left-radius:0px;
 	border-bottom-right-radius:0px;
+	height: 55px;
+	line-height: 55px;
+
 }
 /*set font and color of menu text*/
 .menu {
@@ -72,8 +76,9 @@ p {
 	padding-left: 30px;
 }
 .top-bar ul li a:not(.button), .top-bar ul li a:not(.name) {
-	font-weight: normal;
-	font-size: 14px;
+	padding-top:5px;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-size: 21px;
 }
 /*increase the area available for the search input*/
 .top-bar ul > li.search form {
@@ -127,7 +132,18 @@ p {
 -----------------------------------------------------*/
 header {
 	margin-bottom: 30px;
-	background: #163d5a;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE2M2Q1YSIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzE2M2Q1YSIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjU2JSIgc3RvcC1jb2xvcj0iIzE2M2Q1YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNjNkNWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(22,61,90,0.05) 0%, rgba(22,61,90,0.05) 55%, rgba(22,61,90,1) 56%, rgba(22,61,90,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(22,61,90,0.05)), color-stop(55%,rgba(22,61,90,0.05)), color-stop(56%,rgba(22,61,90,1)), color-stop(100%,rgba(22,61,90,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(22,61,90,0.05) 0%,rgba(22,61,90,0.05) 55%,rgba(22,61,90,1) 56%,rgba(22,61,90,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(22,61,90,0.05) 0%,rgba(22,61,90,0.05) 55%,rgba(22,61,90,1) 56%,rgba(22,61,90,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(22,61,90,0.05) 0%,rgba(22,61,90,0.05) 55%,rgba(22,61,90,1) 56%,rgba(22,61,90,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(22,61,90,0.05) 0%,rgba(22,61,90,0.05) 55%,rgba(22,61,90,1) 56%,rgba(22,61,90,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d163d5a', endColorstr='#163d5a',GradientType=0 ); /* IE6-8 */
+
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
 }
 header h1 {
 	font-size: 48px;
@@ -144,10 +160,11 @@ header h1 {
 }
 header h2 {
 	font-size: 18px;
-	font-style: italic;
 	font-weight: 700;
-	color: #FFF;
+	color: #000;
 	padding-top: 50px;
+	padding-right:35px;
+	float:right;
 }
 #headerImg {
 	padding: 15px 15px 0px 35px;
@@ -227,7 +244,9 @@ aside p:last-child {
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
-
+    -moz-box-shadow: inset 0 0 5px 5px #cab22c;
+-webkit-box-shadow: inset 0 0 5px 5px#cab22c;
+box-shadow: inset 0 0 5px 5px #cab22c;
 }
 .sLeft {
 	background-color: #163d5a;
@@ -247,7 +266,9 @@ aside p:last-child {
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
-
+-moz-box-shadow: inset 0 0 5px 5px #286593;
+-webkit-box-shadow: inset 0 0 5px 5px#286593;
+box-shadow: inset 0 0 5px 5px #286593;
 
 }
 aside p {

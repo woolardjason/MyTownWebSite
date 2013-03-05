@@ -3362,11 +3362,11 @@ div.progress.round .meter {
 }
 
 .top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active {
-	background: black;
+	background: #163d5a;
 }
 
 .top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a {
-	color: #d9d9d9;
+	color: #FFF;
 }
 
 .top-bar ul > li.divider {
@@ -3836,7 +3836,9 @@ body {
 	padding-left: 0;
 	padding-right: 0;
 }
-
+#sLeft{
+	display: none;
+}
 /* The Grid --- */
   /*              */
 
