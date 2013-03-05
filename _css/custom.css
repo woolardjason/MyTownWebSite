@@ -317,8 +317,10 @@ div.news {
 -----------------------------------------------------*/
 footer {
 	background: #966964;
-	height: 300px;
+	height: 320px;
 	padding-top:20px;
+	padding-bottom:10px;
+	margin-bottom:10px;
 }
 #footerList{
 	color:white;
@@ -347,12 +349,12 @@ footer ul li a {
 }
 #footerLocation {
 	color:white;
-	padding-left:35px;
-	padding-top: 15px;
+	padding-left:15px;
+	padding-top: 10px;
 }
 #copywright {
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 40px;
 }
 footer ul li a:hover {
 	color: white;
